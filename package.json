@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx webpack serve",
-    "stop": "npx webpack stop"
+    "stop": "npx webpack stop",
+    "build": "npx webpack build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "html-loader": "^4.2.0",
     "typescript": "^5.3.3",
     "webpack-cli": "^5.1.4"
   },
