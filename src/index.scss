@@ -58,6 +58,10 @@ body {
         height: 150px;
         border: 2px solid black;
 
+        .forSVG button:hover svg path {
+            fill: rgb(228, 9, 9);
+        }
+
         .position1_fill, .position2_fill, .position3_fill, .position4_fill {
             display: flex;
             flex-direction: column;
