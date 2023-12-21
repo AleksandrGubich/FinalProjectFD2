@@ -57,9 +57,11 @@ body {
         width: 1000px;
         height: 150px;
         border: 2px solid black;
+        transition: 0.2s;
 
         .forSVG button:hover svg path {
             fill: rgb(228, 9, 9);
+            transition: 0.2s;
         }
 
         .position1_fill, .position2_fill, .position3_fill, .position4_fill {
