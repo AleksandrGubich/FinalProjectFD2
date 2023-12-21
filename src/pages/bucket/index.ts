@@ -12,7 +12,18 @@ export class BucketPage extends Page {
 
     render() {
         const title = this.createHeaderTitle(BucketPage.TextObject.MainTitle);
-        this.container.append(title);
+        fetch('./bucket.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+                const newDiv = document.createElement('div');
+                newDiv.innerHTML = htmlContent;
+
+                this.container.append(title, newDiv);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки HTML:', error);
+            });
+
         return this.container;
     }
 }

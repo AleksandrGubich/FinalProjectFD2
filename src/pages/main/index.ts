@@ -12,7 +12,7 @@ export class MainPage extends Page {
 
     render() {
         const title = this.createHeaderTitle(MainPage.TextObject.MainTitle);
-        fetch('./src/pages/main/main.html')
+        fetch('./main.html')
             .then(response => response.text())
             .then(htmlContent => {
                 const newDiv = document.createElement('div');

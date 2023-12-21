@@ -41,7 +41,21 @@ module.exports = {
             },
         ],
     },
-    plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+    plugins: [
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({
+            filename: "main.html",
+            template: "./src/core/templates/toFill/main.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "about-us.html",
+            template: "./src/core/templates/toFill/about-us.html",
+          }),
+          new HtmlWebpackPlugin({
+            filename: "bucket.html",
+            template: "./src/core/templates/toFill/bucket.html",
+          }),
+],
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
     },
