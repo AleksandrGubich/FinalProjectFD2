@@ -3,7 +3,7 @@ import { Page } from "../../core/templates/page";
 export class MainPage extends Page {
 
     static TextObject = {
-        MainTitle: 'Main Page',
+        MainTitle: 'Ваши любимые товары с быстрой доставкой!',
     }
 
     constructor(id: string) {

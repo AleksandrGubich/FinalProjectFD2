@@ -1,0 +1,99 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 300;
+}
+
+
+
+// Шапка
+.header-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background-color: #d742f5;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1000px;
+
+        >a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        >a:hover {
+            color: #cbb7c1;
+            transition: 0.2s;
+        }
+    }
+}
+
+
+
+// Заполнение main
+.fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    gap: 20px;
+
+    .position1, .position2, .position3, .position4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 1000px;
+        height: 150px;
+        border: 2px solid black;
+
+        .position1_fill, .position2_fill, .position3_fill, .position4_fill {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+    }
+    
+    .position1 {
+        .forImg1 {
+            background: url('../src/core/templates/components/images/car.jpg') cover;
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .position2 {
+        .forImg2 {
+            background: url('../src/core/templates/components/images/car.jpg') cover;
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .position3 {
+        .forImg3 {
+            background: url('../src/core/templates/components/images/car.jpg') cover;
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .position4 {
+        .forImg4 {
+            background: url('../src/core/templates/components/images/car.jpg') cover;
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
